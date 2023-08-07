@@ -1,0 +1,98 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: 'Open Sans', sans-serif;
+}
+
+
+:root{
+     --primary-color : hsl(204, 75%, 16%) ;
+     --secondary-color : hsl(204, 75%, 20%) ;
+     --tertiary-color: hsl(162, 100%, 40%);
+     --white-color: hsl(0, 0%, 100%) ;
+     --gray-color: hsl(209, 12%, 57%);}
+
+
+body{
+  background-color: var(--primary-color);
+     }
+
+
+.title{
+     color: var(--white-color);
+     font-size: 50px;
+     text-align: center;
+     margin-bottom: 10px;
+
+}     
+.Form{
+     display: flex;
+     flex-direction: column;
+     width: 30%;
+     height: 100vh;
+     gap: 10px;
+     margin: auto;
+     justify-content: center;
+}
+
+.Input{
+     height: 40px;
+     padding: 10px;
+     outline: none;
+}
+
+.btn{
+      height: 40px;
+     border: none;
+     outline: none;
+     background-color:var(--tertiary-color);
+     padding: 5px;
+     color: white;
+     font-size: 15px;
+     cursor: pointer;
+     border-radius: 2px;
+}
+
+.btn:hover{
+     background-color: var(--white-color);
+     color: var(--primary-color);
+}
+
+.output{
+     background-color: var(--white-color);
+     height: 100px;
+     padding: 10px;
+     text-align: center;
+     margin-top: 5px;
+     color: var(--primary-color);
+     text-transform: capitalize;
+     font-weight: 900;
+}
+
+@media  (min-width: 315px  ) and (max-width:600px) {
+     .Form{
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+          height: 100vh;
+          gap: 10px;
+          margin: auto;
+          justify-content: center;
+     }
+
+
+
+     .Input{
+          height: 40px;
+          padding: 10px;
+          outline: none;
+     }
+     
+
+
+
+}
